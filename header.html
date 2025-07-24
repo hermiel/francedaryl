@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>France Daryl Hermie Cuneta - Front-end Developer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <style>
+            .burger {
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                justify-content: center;
+                margin-left: auto;
+            }
+            .burger span {
+                height: 4px;
+                background: black;
+                margin: 5px 0;
+                border-radius: 2px;
+                transition: 0.3s;
+            }
+            @media (max-width: 600px) {
+                .nav-links {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px;
+                    right: 10px;
+                    background: white;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    padding: 20px;
+                    border-radius: 10px;
+                    z-index: 100;
+                }
+                .nav-links.active {
+                    display: flex;
+                }
+                .burger {
+                    display: flex;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="/index.html">hermiel</a></div>
+            <div class="burger" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/blogs.html">Blogs</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            const burger = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        </script>
+    </body>
+</html>

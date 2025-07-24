@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>France Daryl Hermie Cuneta - Front-end Developer</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+
+<div id="navbar-container"></div>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
+	<body>
+		<div id="page-title">
+            <h1 class="page-title">Projects</h1>
+
+            <h1 class="under">Under Maintenance</h1>
+
+        </div>
+
+  <div id="footer-container"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>  
+	</body>
+</html>

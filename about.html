@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>France Daryl Hermie Cuneta - Front-end Developer</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+	</head>
+
+<div id="navbar-container"></div>
+
+<script>
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+    });
+</script>
+
+  <body>
+    <h1 class="page-title">About</h1>
+<div class="content-wrapper">
+  <div class="about-me">
+    <img id="profile-pic" src="pictures/my-pic.jpg" alt="Profile Picture">
+    <div class="about-section">
+      <h2>France Daryl Hermie N. Cuneta</h2>
+      <h3>Computer Engineer</h3>
+      <h3>Bacoor, Cavite</h3>
+      <a href="mailto:francedaryl.cuneta@gmail.com">
+        <button class="connect-btn">Send Email</button>
+      </a>
+      <button class="connect-btn" onclick="window.location.href='/contact.html';">Social Media</button>
+    </div>
+  </div>
+
+    <div id="summary-sections-wrapper">
+        <div class="left-column">
+            <h2 id="section-title">Education</h2>
+              <div id="education-summary">
+              <h3>Bachelor of Science in Computer Engineering</h3>
+              <p><i>San Sebastian College - Recoletos de Cavite </i></p>
+              <p>GWA: 1.46 | Graduated: 2025</p>
+              </div>
+            
+            <h2 id="section-title">Awards and Recognition</h2>
+              <div id="awards-summary">
+              <ul>       
+              <li>Dean's List Awardee (AY 2022-2025)</li>
+              <li>Best Research Study - Research Colloquium 2025</li>
+              <li>Active Officer of the Year (2024) - 3rd Place</li>
+              </ul>
+              </div>
+        </div>
+
+  <div class="right-column">
+      <h2 id="section-title">Organizations</h2>
+      <div id="section-title">
+        <h3 id="section-title">Computer Group of AcTive Engineering Students (CGATES)</h3>
+            <ul>
+            <li>Vice President for Internal Affairs (2023-2024)</li>
+            <li>Treasurer (2024-2025)</li>
+            </ul>
+
+        <h3 id="section-title">Institute of Computer Engineers of the Philippines (ICpEP) Region IV-A Chapter</h3>
+            <ul>
+            <li>Member (2024-2025)</li>
+            </ul>
+
+        <h3 id="section-title">The Sebastinian Gazette (TSG)</h3>
+            <ul>
+            <li>News Writer (2022-2025)</li>
+            <li>Muralla Issue Editor (2023)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  <div class="bottom-row">
+        <div id="experience-summary">
+            <h2 id="section-title">Experience</h2>
+            <h3 id="section-title"> Web Development Intern (Feb 2025 - May 2025) </h3>
+            <p id="section-title"> <i> Endsofttech Web Solutions </i> </p>
+            <ul>
+                <li>Developed and maintained responsive websites using HTML, CSS, JavaScript, PHP, and WordPress.</li>
+                <li>Identified and resolved front-end and back-end bugs of different websites to improve site functionality and user experience.</li>
+            </ul>
+        </div>
+    </div>
+
+    
+  <div id="footer-container"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+
+	</body>
+</html>

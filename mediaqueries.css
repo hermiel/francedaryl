@@ -1,0 +1,154 @@
+/* NAV BAR */
+
+
+/* HOME PAGE */
+@media (max-width: 733px) {
+
+.rectangle-shape {
+  max-height: 570px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: -90px;
+}
+
+#profile-img{
+    margin-top: 73px;
+}
+
+.profile-btn {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+}
+
+.text-section {
+  flex: 1;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+}
+
+@media (max-width: 848px) {
+#summary-section-wrapper {
+    margin: -25px auto -50px auto;
+}
+
+.rectangle-shape2 {
+  margin-bottom: -15px;
+}
+
+@media (max-width: 600px) {
+  .line2 {
+    font-size: 2rem;      /* Smaller font for mobile */
+    white-space: normal;  /* Allow wrapping */
+    text-align: center;   /* Center text */
+  }
+  .line1 {
+    font-size: 2rem;
+    white-space: normal;
+    text-align: center;
+  }
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-section {
+    margin-top: 20px; /* Add spacing below the button */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  #profile-img {
+    width: 70vw;
+    max-width: 250px;
+    height: auto;
+    margin: -55px auto 0 auto;
+    position: static;
+    transform: none;
+  }
+.rectangle-shape3 {
+  width: 340px;
+  margin-top: 8px;
+  margin-left: -10px;
+  margin-right: auto;
+  display: block; /* ensures margin auto works */
+}
+}
+
+}
+
+/* CONTACT PAGE */
+@media (max-width: 600px) {
+  #social-media {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+      width: 250px;                 
+
+  }
+  .column1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* BLOG PAGE */
+@media (max-width: 983px)and (min-width: 537px){
+  .blog-container {
+    width: 100%;
+    max-width:80%; /* Let it shrink while leaving space on the sides */
+    margin: 25px auto 25px auto; /* vertical | horizontal auto to center */
+    padding: 20px; /* keep internal spacing */
+  }
+}
+
+@media (max-width: 537px)and (min-width: 0px){
+  .blog-container {
+    width: 100%;
+    max-width: 80%; /* Let it shrink while leaving space on the sides */
+    margin: 25px auto 25px auto; /* vertical | horizontal auto to center */
+    padding: 20px; /* keep internal spacing */
+  }
+}
+
+
+/* ABOUT ME PAGE */
+@media (max-width: 983px) and (min-width: 632px){
+  .bottom-row {
+    width: 100%;
+    max-width: 90%; /* Let it shrink while leaving space on the sides */
+    margin: 25px auto 25px auto; /* vertical | horizontal auto to center */
+    padding: 20px; /* keep internal spacing */
+  }
+}
+
+@media (max-width: 632px) {
+  .bottom-row {
+    width: 100%;
+    max-width: 85%; /* Let it shrink while leaving space on the sides */
+    margin: 25px auto 25px auto; /* vertical | horizontal auto to center */
+    padding: 20px; /* keep internal spacing */
+  }
+
+  .about-section {
+  margin-top: 30px;
+}
+}
+
+@media (max-width: 552px) {
+  .about-section{
+    width: 100%;
+    max-width: 75%;
+  }
+
+  .about-me {
+    gap: 10px;
+  }
+  #profile-pic {
+  margin-top: 50px;
+}
+}

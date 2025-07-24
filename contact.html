@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>France Daryl Hermie Cuneta - Front-end Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+ 
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+    <h1 class="page-title">Contact</h1>
+      <div id="page-title">
+
+    <div id="social-media">
+      <div class="column1">
+        <img id="social-icons" src="pictures/icons/fb.png" alt="Facebook" />
+        <button class="social-btn" onclick="window.location.href='https://www.facebook.com/francedarylhnc';">Facebook</button>
+      </div>
+      <div class="column1">
+        <img id="social-icons" src="pictures/icons/ig.png" alt="Instagram" />
+        <button class="social-btn" onclick="window.location.href='https://www.instagram.com/francedaryl_/';">Instagram</button>
+      </div>
+      <div class="column1">
+        <img id="social-icons" src="pictures/icons/mail.png" alt="Email" />
+        <a href="mailto:francedaryl.cuneta@gmail.com">
+          <button class="social-btn">Email</button>
+        </a>
+      </div>
+      <div class="column1">
+        <img id="social-icons" src="pictures/icons/linked.png" alt="LinkedIn" />
+        <button class="social-btn" onclick="window.location.href='https://www.linkedin.com/in/france-daryl-hermie-cuneta/';">LinkedIn</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>
